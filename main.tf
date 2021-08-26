@@ -15,13 +15,13 @@ terraform {
 # PROVIDER
 
 provider "kubectl" {
-  alias          = "cluster-1"
+  alias          = "cluster_1"
   config_path    = "~/.kube/config"
   config_context = var.kubernetes["cluster_1"].config_context
 }
 
 provider "kubectl" {
-  alias          = "cluster-2"
+  alias          = "cluster_2"
   config_path    = "~/.kube/config"
   config_context = var.kubernetes["cluster_2"].config_context
 }
